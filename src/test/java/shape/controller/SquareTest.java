@@ -10,12 +10,12 @@ public class SquareTest {
     Square square;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         square = new Square();
     }
 
     @Test
-    public void getArea() {
+    public void getAreaShouldReturn0WhenLength0AndWidth0Teststa() {
         square.setLength(0);
         square.setWidth(0);
         assertEquals(0, square.getArea(), 0);
