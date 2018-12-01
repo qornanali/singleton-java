@@ -3,17 +3,18 @@ package shape.controller;
 import shape.BaseShape;
 
 public class Square implements BaseShape {
-    private double area = 0;
+    private int length = 0;
+    private int width = 0;
 
     public double getArea() {
-        return area;
+        return length * width;
     }
 
     public void setLength(int i) {
-        area = i*i;
+        length = i;
     }
 
     public void setWidth(int i) {
-        area = i*i;
+        width = i;
     }
 }
