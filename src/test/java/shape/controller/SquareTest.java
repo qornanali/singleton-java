@@ -20,4 +20,12 @@ public class SquareTest {
         square.setWidth(0);
         assertEquals(0, square.getArea(), 0);
     }
+
+
+    @Test
+    public void getAreaShouldReturn1WhenLength1AndWidth1Teststa() {
+        square.setLength(1);
+        square.setWidth(1);
+        assertEquals(1, square.getArea(), 0);
+    }
 }
