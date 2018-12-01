@@ -28,4 +28,11 @@ public class SquareTest {
         square.setWidth(1);
         assertEquals(1, square.getArea(), 0);
     }
+
+    @Test
+    public void getAreaShouldReturn4WhenLength2AndWidth2Teststa() {
+        square.setLength(2);
+        square.setWidth(2);
+        assertEquals(4, square.getArea(), 0);
+    }
 }

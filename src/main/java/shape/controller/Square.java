@@ -10,10 +10,10 @@ public class Square implements BaseShape {
     }
 
     public void setLength(int i) {
-        area = i;
+        area = i*i;
     }
 
     public void setWidth(int i) {
-        area = i;
+        area = i*i;
     }
 }
