@@ -8,10 +8,12 @@ import static org.junit.Assert.*;
 public class SquareTest {
 
     Square square;
+    Square otherSquare;
 
     @Before
     public void setUp() {
-        square = new Square();
+        square = Square.getInstance();
+        otherSquare = Square.getInstance();
     }
 
     @Test
@@ -41,5 +43,10 @@ public class SquareTest {
         square.setLength(2);
         square.setWidth(1);
         assertEquals(2, square.getArea(), 0);
+    }
+
+    @Test
+    public void squareInstanceShouldBeEqualsWithOtherSquareInstanceTest(){
+        assertEquals(square, otherSquare);
     }
 }
